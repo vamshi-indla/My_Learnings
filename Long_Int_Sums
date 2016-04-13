@@ -1,0 +1,15 @@
+#!/bin/python
+# Input: Count of Numbers, \n Array of Long Numbers
+# Output: Sum of all the Long Numbers
+
+import sys
+sum_total = 2**31
+sum_total = 0 
+arr = [0] * 2**16
+
+n = int(raw_input().strip())
+arr = map(int,raw_input().strip().split(' '))
+for i in range(0, n):
+    sum_total = sum_total + arr[i]
+
+print(sum_total)
