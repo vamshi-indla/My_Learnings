@@ -1,0 +1,24 @@
+#!/bin/python
+# Count fraction of +ves, -ves and zeros numbers in the numbers provided
+# Input : n - Count of Numbers Array, \n Numbers separated by spaces
+# Output: Fraction of +ve numbers, Fraction of -ve numbers, Fraction of Zero Numbers
+
+import sys
+count_neg = 0 
+count_pos = 0
+count_zero = 0
+
+n = int(raw_input().strip())
+arr = map(int,raw_input().strip().split(' '))
+
+for i in xrange(n):
+    if (arr[i] < 0) : 
+        count_neg = count_neg + 1 
+    if (arr[i] > 0) : 
+        count_pos = count_pos + 1 
+    if (arr[i] == 0) : 
+        count_zero = count_zero + 1 
+ 
+print(float(count_pos)/n)
+print(float(count_neg)/n)
+print(float(count_zero)/n)
