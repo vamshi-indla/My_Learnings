@@ -1,0 +1,21 @@
+#!/bin/python
+# Input: n, \n Matrix n*n
+# Output : Abs(Sum of left diagnol - Sum of right diagnol numbers)
+
+import sys
+diag_1 = 0
+diag_2 = 0 
+
+n = int(raw_input().strip())
+a = []
+for a_i in xrange(n):
+   a_temp = map(int,raw_input().strip().split(' '))
+   a.append(a_temp)
+
+for a_i in xrange(n):
+    diag_1 = diag_1 + a[a_i][a_i]
+    diag_2 = diag_2 + a[a_i][n - a_i - 1]
+
+                             
+print(abs(diag_1 - diag_2))
+ 
