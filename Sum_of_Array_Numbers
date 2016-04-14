@@ -1,0 +1,13 @@
+#!/bin/python
+# Print sum of provided numbers
+# Input: n - Count of Numbers, Array of Numbers
+# Output: Sum of the provided Numbers
+
+import sys
+
+sum_arr = 0
+n = int(raw_input().strip())
+arr = map(int,raw_input().strip().split(' '))
+for i in xrange(n):
+    sum_arr = sum_arr + arr[i]
+print(sum_arr)
