@@ -1,0 +1,30 @@
+#!/bin/python
+# Divide a number with its own digits
+# https://www.hackerrank.com/challenges/find-digits
+# Input: n - Count of Numbers, Array of Numbers
+# Sample input:
+# 2
+# 12
+# 1012
+# Output : Number of digits, that divide the number exactly.
+# Sample Output:
+# 2
+# 3
+
+# Explanation: The number 1212 is broken into two digits, 11 and 22. When 1212 is divided by either of those digits, the calculation's remainder is 00; thus, the number of evenly-divisible digits in 1212 is 22.
+
+#The number 10121012 is broken into four digits, 11, 00, 11, and 22. 10121012 is evenly divisible by its digits 11, 11, and 22, #but it is not divisible by 00 as division by zero is undefined; thus, our count of evenly divisible digits is 33.
+
+
+import sys
+
+
+t = int(raw_input().strip())
+for a0 in xrange(t):
+    count = 0
+    n = int(raw_input().strip())
+    for i in xrange(len(str(n))):
+        if (int(str(n)[i:i+1]) != 0):
+            if (n % int(str(n)[i:i+1]) == 0): 
+                count = count + 1
+    print(count)
