@@ -1,0 +1,15 @@
+#!/bin/python
+# Build Stair Case
+# Input: n-Number of Steps
+# Output: Stair case with #
+# Learning: Usage of simple characters replication
+
+import sys
+
+
+n = int(raw_input().strip())
+ 
+for i in xrange(n):
+    arr =  " " * (n-i-1) + "#" * (i+1)
+    print(arr)
+        
