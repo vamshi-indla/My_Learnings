@@ -1,0 +1,52 @@
+Python - Google Class - Day 2
+
+Regular Expressions:
+
+Ref:
+https://www.youtube.com/watch?v=kWyoYtvJpe4
+
+
+1. (dot) - any character (other than new line)
+
+	\w word char
+	\d digit
+	\s space
+	\S non-whitespace
+	+ 1 or more
+	* 0 or 1
+
+2. searches left to right
+3. Code to extract all email address from a text
+
+	re.search(r’\w[\w.]*@[\w.]+’,’what .n@gmail.com is the @')
+
+	\w - word character
+	r - raw
+	[] - set of values that can be expected
+	‘*’ - 0 or more characters
+4. Command to know the place where indentation error is occurring
+
+	python -m tabnanny prog.py
+
+5. import os
+
+	os.listdir(dir) -> provides all files of provided path
+        os.path(dir)
+	os.path.exists(‘/tmp/file1’)
+
+6. import shutil
+
+	shutil.copy(sourcepath, destdir)
+
+7. import commands
+
+	help.command(getstatusoutput)
+
+8.  Avoid giving >python prog.py, in place of ./prog.py
+
+	chmod +x prog.py -> makes it executable
+
+9. Import urllib
+
+
+urllib.urlretrieve('http://google.com/intl/en.ALL/images/logo.gif','blah.gif')
