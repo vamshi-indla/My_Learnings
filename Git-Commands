@@ -21,3 +21,12 @@ VK: Copies from github to Desktop
 
 References: 
 https://www.youtube.com/watch?v=0fKg7e37bQE
+
+
+#----------------------------------------------------
+## Creating Web Applications
+- Refer Flask, Django
+
+- Refer pyramid package
+pkg_resources.get_distribution("construct").version
+#----------------------------------------------------
