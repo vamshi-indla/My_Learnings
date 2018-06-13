@@ -1,0 +1,21 @@
+
+## Data Engineer roles 
+Collects, Organizes, Creates databases, Datawarehouses
+  
+## Data Scientist roles 
+Data Analysis, Machine Learning, Drawing Insights, Story Telling
+
+## Google Data Processing Technologies and its cloud counterparts
+
+2002 - GFS - Cloud Storage
+2004 - Map Reduce - Data Proc
+2006 - Big Table
+2008 - Dremel - Big Query
+2009 - Colossus - Cloud Storage
+2010 - Flume - Data Flow
+2011 - Megastore & Spanner - DataStore
+2012 - Milwheel - Data Flow
+2013 - PubSub
+2015 - Tensorflow - ML
+
+  
