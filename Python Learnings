@@ -1,0 +1,42 @@
+
+# Link to learn basics of Jupyter notebook
+- Using R,ggplot2 in Jupyter
+- Shortcuts
+
+https://www.analyticsvidhya.com/blog/2018/05/starters-guide-jupyter-notebook/
+
+# Commonly used notebook shortcuts
+
+Once you are in command mode (that is, you don’t have an active cell), you can try out the below shortcuts:
+
+A will insert a new cell above the active cell, and B will insert one below the active cell
+To delete a cell, press D twice in succession
+To undo a deleted cell, press Z
+Y turns the currently active cell into a code cell
+Hold down Shift + the up or down arrow key to select multiple cells. While in multiple selection mode, pressing Shift + M will merge your selection
+F will pop up the ‘Find and Replace’ menu
+
+
+When in edit mode (press Enter when in command mode to get into Edit mode), you will find the below shortcuts handy:
+
+Ctrl + Home to go the start of the cell
+Ctrl + S will save your progress
+As mentioned, Ctrl + Enter will run your entire cell block
+Alt + Enter will not only run your cell block, it also adds a new cell below
+Ctrl + Shift + F opens the command palette
+
+
+
+# Jupyter notebook extensions
+pip install jupyter_contrib_nbextensions
+jupyter contrib nbextension install --user
+
+# Jupyterlab
+git clone https://github.com/jupyterhub/jupyterhub-tutorial /srv/jupyterhub
+
+Quickest way to get jupyterhub is to run in this repo:
+conda env create -f environment.yml   (not working)
+
+
+
+Next Try Jupyter Lab tutorials------------###
