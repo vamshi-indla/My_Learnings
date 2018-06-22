@@ -1,7 +1,9 @@
 
 # Link to learn basics of Jupyter notebook
 - Using R,ggplot2 in Jupyter
-- Shortcuts
+- Shortcuts in Notebook
+- Jupyterlab new advancement
+- Interesting Jupyternotebooks that can be reproduced
 
 https://www.analyticsvidhya.com/blog/2018/05/starters-guide-jupyter-notebook/
 
@@ -40,3 +42,5 @@ conda env create -f environment.yml   (not working)
 
 
 Next Try Jupyter Lab tutorials------------###
+https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks
+
