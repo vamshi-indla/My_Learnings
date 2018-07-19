@@ -40,6 +40,18 @@ Quickest way to get jupyterhub is to run in this repo:
 conda env create -f environment.yml   (not working)
 
 
+# Multiclass image classification References
+* https://github.com/WenjinTao/Leaf-Classification--Kaggle
+* https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html
+
+# Transfer Learning
+* https://machinelearningmastery.com/transfer-learning-for-deep-learning/
+
+
+# Course: Using Python to Access Web Data
+* Reference links: https://www.py4e.com/materials
+* Book: http://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf
+* 
 
 Next Try Jupyter Lab tutorials------------###
 https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks
