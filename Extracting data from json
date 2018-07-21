@@ -13,7 +13,7 @@ data = uh.read()
 print('Retrieved', len(data), 'characters')
 
 info = json.loads(data)
-print('Count: ', len(info))
+print('Count: ', len(info['comments']))
 
 total=0
 for item in info['comments']:
