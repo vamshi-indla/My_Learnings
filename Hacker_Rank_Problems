@@ -132,4 +132,45 @@ if __name__ == '__main__':
     fptr.write(str(result) + '\n')
 
     fptr.close()
+    
+#https://www.hackerrank.com/challenges/map-and-lambda-expression/problem
+# Usage of lambda and map
+cube = lambda x: x**3 # complete the lambda function 
 
+def fibonacci(n):
+    if (n==0):
+        return []
+    elif(n==1):
+        return [0]
+    else:
+        ar = [0] * n
+        ar[0] = 0
+        ar[1] = 1
+        for i in range(2,n):
+            ar[i] = ar[i-1] + ar[i-2]
+        return ar
+    # return a list of fibonacci numbers
+
+if __name__ == '__main__':
+    n = int(input())
+    print(list(map(cube, fibonacci(n))))
+    
+ # https://www.hackerrank.com/challenges/validate-list-of-email-address-with-filter/problem
+ # Validate Email address
+ import re
+def fun(s):
+    # return True if s is a valid email, else return False
+    return bool(re.match(r'[^@]+@[^@]+\.[^@]+',s))
+
+def filter_mail(emails):
+    return list(filter(fun, emails))
+
+if __name__ == '__main__':
+    n = int(input())
+    emails = []
+    for _ in range(n):
+        emails.append(input())
+
+filtered_emails = filter_mail(emails)
+filtered_emails.sort()
+print(filtered_emails)
