@@ -1,0 +1,29 @@
+# cook your dish here
+class vehicle:
+    speed = 12
+    def __init__(self, speed = 10):
+        self.speed = speed
+    def accelerate(self, increaseamount):
+        self.speed += increaseamount
+    def __del__(self):
+        print("Object is destroyed")
+        
+        
+class Car(vehicle):
+    def __init__(self, wheels=4, passengers = 4):
+        self.wheels =  wheels * passengers
+        
+        
+car1  = vehicle()
+print("Main class attribute initialized", car1.speed)
+car1.accelerate(5)
+print("Main class method called ", car1.speed)
+
+childcar = Car(6,4 )
+print("Inherited class attribute:", childcar.wheels)
+
+car2 = vehicle()
+print("Initialized speed", car2.speed)
+
+# Destroy Object
+#del car1
